@@ -25,7 +25,12 @@ const ContactsPage = () => (
           </div>
         </div>
       </Hero>
-      <div className="contact-form-container">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        className="contact-form-container"
+      >
         <h1>Send me a message</h1>
         <p>
           Fell free to get in touch with me with anything related to Wildeving
@@ -34,6 +39,7 @@ const ContactsPage = () => (
         <div className="input-wrapper">
           <input
             type="text"
+            name="name"
             className="contact-name--input border--input"
             placeholder="Name"
           />
@@ -44,6 +50,7 @@ const ContactsPage = () => (
         <div className="input-wrapper">
           <input
             type="email"
+            name="email"
             className="contact-email--input border--input"
             placeholder="Email"
           />
@@ -54,6 +61,7 @@ const ContactsPage = () => (
         <div className="input-wrapper">
           <input
             type="text"
+            name="subject"
             className="contact-subject--input border--input"
             placeholder="Subject"
           />
@@ -64,6 +72,7 @@ const ContactsPage = () => (
         <div className="input-wrapper">
           <textarea
             type="text"
+            name="message"
             rows="5"
             className="contact-message--input border--input"
             placeholder="Message"
@@ -71,9 +80,15 @@ const ContactsPage = () => (
           <p className="contact-message--input--error input--error--msg">
             Please write a message
           </p>
+          <button
+            style={{ border: "none" }}
+            type="submit"
+            className="btn btn--primary"
+          >
+            Send
+          </button>
         </div>
-        <div className="btn btn--primary">Send</div>
-      </div>
+      </form>
     </Layout>
   </>
 )

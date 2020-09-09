@@ -172,7 +172,12 @@ const IndexPage = ({ data }: Props) => {
                       It's pleasure to have you on my website. Let us know if
                       there's an opportunity for us to do something toghether.
                     </p>
-                    <div className="contact-form-container">
+                    <form
+                      name="contact"
+                      method="POST"
+                      data-netlify="true"
+                      className="contact-form-container"
+                    >
                       <h1>Send me a message</h1>
                       <p>
                         Fell free to get in touch with me with anything related
@@ -182,6 +187,7 @@ const IndexPage = ({ data }: Props) => {
                       <div className="input-wrapper">
                         <input
                           type="text"
+                          name="name"
                           className="contact-name--input border--input"
                           placeholder="Name"
                         />
@@ -192,6 +198,7 @@ const IndexPage = ({ data }: Props) => {
                       <div className="input-wrapper">
                         <input
                           type="email"
+                          name="email"
                           className="contact-email--input border--input"
                           placeholder="Email"
                         />
@@ -202,6 +209,7 @@ const IndexPage = ({ data }: Props) => {
                       <div className="input-wrapper">
                         <input
                           type="text"
+                          name="subject"
                           className="contact-subject--input border--input"
                           placeholder="Subject"
                         />
@@ -212,6 +220,7 @@ const IndexPage = ({ data }: Props) => {
                       <div className="input-wrapper">
                         <textarea
                           type="text"
+                          name="message"
                           rows="5"
                           className="contact-message--input border--input"
                           placeholder="Message"
@@ -220,8 +229,14 @@ const IndexPage = ({ data }: Props) => {
                           Please write a message
                         </p>
                       </div>
-                      <div className="btn btn--primary">Send</div>
-                    </div>
+                      <button
+                        style={{ border: "none" }}
+                        type="submit"
+                        className="btn btn--primary"
+                      >
+                        Send
+                      </button>
+                    </form>
                   </div>
                 </div>
               </section>
