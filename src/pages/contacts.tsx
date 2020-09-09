@@ -28,7 +28,7 @@ const ContactsPage = () => (
       <form
         name="contact"
         method="POST"
-        data-netlify="true"
+        netlify
         className="contact-form-container"
       >
         <h1>Send me a message</h1>
