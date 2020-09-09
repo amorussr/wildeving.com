@@ -9,7 +9,7 @@ module.exports = {
     title: `Wildeving`,
     description: `Wildeving is my personal website, and blog contains two type of content: articles and stories. Articles posts is tech blog, which include different tech stacks like, vim customizing, linux system administration, web development, desktop development, mobile development, designing and so on. Stories blog contains my personal notes and thoughts about world, politics, health, wellness, veganism, activism and so so on...`,
     author: `@amorussr`,
-    siteUrl: `https://www.example.com`,
+    siteUrl: `https://www.wildeving.com`,
   },
   plugins: [
     {
@@ -59,7 +59,7 @@ module.exports = {
       options: {
         name: `gatsby-wildeving-blog`,
         short_name: `wildeving`,
-        start_url: `/`,
+        start_url: `https://www.wildeving.com`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
