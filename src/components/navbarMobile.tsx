@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useContext, useRef } from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import { MainContext } from "../MainContext"
-import { MdSearch } from "react-icons/md"
 import { FiFeather } from "react-icons/fi"
 import { FcWorkflow } from "react-icons/fc"
 import { BsPerson } from "react-icons/bs"

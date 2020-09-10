@@ -9,6 +9,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import PostCard from "../components/postCard"
+import ContactForm from "../components/contactForm"
 
 interface Props {
   readonly data: PageQueryData
@@ -172,72 +173,7 @@ const IndexPage = ({ data }: Props) => {
                       It's pleasure to have you on my website. Let us know if
                       there's an opportunity for us to do something toghether.
                     </p>
-                    <form
-                      name="contact"
-                      method="POST"
-                      data-netlify="true"
-                      data-netlify-honeypot="bot-field"
-                      className="contact-form-container"
-                    >
-                      <h1>Send me a message</h1>
-                      <p>
-                        Fell free to get in touch with me with anything related
-                        to Wildeving or you can just say hi I will get back to
-                        you as soon as I can.
-                      </p>
-                      <div className="input-wrapper">
-                        <input
-                          type="text"
-                          name="name"
-                          className="contact-name--input border--input"
-                          placeholder="Name"
-                        />
-                        <p className="contact-name--input--error input--error--msg">
-                          Please enter your name
-                        </p>
-                      </div>
-                      <div className="input-wrapper">
-                        <input
-                          type="email"
-                          name="email"
-                          className="contact-email--input border--input"
-                          placeholder="Email"
-                        />
-                        <p className="contact-email--input--error input--error--msg">
-                          Please enter a vaild email address
-                        </p>
-                      </div>
-                      <div className="input-wrapper">
-                        <input
-                          type="text"
-                          name="subject"
-                          className="contact-subject--input border--input"
-                          placeholder="Subject"
-                        />
-                        <p className="contact-subject--input--error input--error--msg">
-                          Please enter a subject
-                        </p>
-                      </div>
-                      <div className="input-wrapper">
-                        <textarea
-                          type="text"
-                          name="message"
-                          rows="5"
-                          className="contact-message--input border--input"
-                          placeholder="Message"
-                        ></textarea>
-                        <p className="contact-message--input--error input--error--msg">
-                          Please write a message
-                        </p>
-                      </div>
-                      <button
-                        style={{ border: "none" }}
-                        type="submit"
-                        className="btn btn--primary"
-                      >
-                        Send
-                      </button>
-                    </form>
+                    <ContactForm />
                   </div>
                 </div>
               </section>
