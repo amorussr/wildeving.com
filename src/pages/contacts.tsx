@@ -28,7 +28,8 @@ const ContactsPage = () => (
       <form
         name="contact"
         method="POST"
-        netlify
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
         className="contact-form-container"
       >
         <h1>Send me a message</h1>

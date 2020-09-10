@@ -176,6 +176,7 @@ const IndexPage = ({ data }: Props) => {
                       name="contact"
                       method="POST"
                       data-netlify="true"
+                      data-netlify-honeypot="bot-field"
                       className="contact-form-container"
                     >
                       <h1>Send me a message</h1>
